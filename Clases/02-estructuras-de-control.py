@@ -24,3 +24,4 @@ print("El promedio es:", promedio)
 notas = [6,8,8,8,9]
 print ("El promedio es:", sum(notas)/len(notas))
 
+
