@@ -1,15 +1,14 @@
-numero = int(input("Dígame cuántas palabras tiene la lista: "))
 
-if numero < 1:
-    print("¡Imposible!")
+print("DIVISOR DE NÚMEROS")
+dividendo = int(input("Escriba el dividendo: "))
+divisor = int(input("Escriba el divisor: "))
+
+if dividendo % divisor:
+    print(f"La división no es exacta. Cociente: {dividendo // divisor} "
+               f"Resto: {dividendo % divisor}")
 else:
-    lista = []
-    for i in range(numero):
-        print("Dígame la palabra", str(i + 1) + ": ", end="")
-        palabra = input()
-        lista += [palabra]
-    print("La lista creada es:", lista)
-
+    print(f"La división es exacta. Cociente: {dividendo // divisor}")
+    
     
 
 
