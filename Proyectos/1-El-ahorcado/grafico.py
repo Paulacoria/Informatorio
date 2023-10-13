@@ -6,10 +6,6 @@ ___
   / \
  
 
-
-
-
-
 cantidad de intentos:
 5 - pierna 2
 4 - pierna 1
@@ -21,58 +17,64 @@ cantidad de intentos:
 
 
 '''
-intento_1 = ''''
-___
-    O
-'''
-
-intento_2 = '''
-___
-    O
-    |
-'''
-intento_3 = '''
-___
-    O
-    |\\
-'''
-
-intento_4 = '''
-___
-    O
-   /|\\
-'''
-
-intento_5 = '''
-___
-    O
-   /|\\
-   /
-
-'''
-intento_6 = '''
+juego_perdido = '''
 ___
     O
    /|\\
    / \\
+   
+'''
 
+intentos_restantes_1 = '''
+___
+    O
+   /|\\
+   /
+'''
+intentos_restantes_2 = '''
+___
+    O
+   /|\\
+   
+'''
+
+intentos_restantes_3 = '''
+___
+    O
+   /|
+'''
+
+intentos_restantes_4 = '''
+___
+    O
+    |
+
+'''
+intentos_restantes_5 = '''
+___
+    O
+    
 '''
 
 def dibujar_intentos(intento):
-    print(f"gráfico intento restante {intento}: ")
-
-    if intento == 1:
-        print(intento_1)    
+    
+    if intento == 0:
+        print(juego_perdido)    
+    elif intento == 1:
+        print(intentos_restantes_1)
     elif intento == 2:
-        print(intento_2)
+        print(intentos_restantes_2)
     elif intento == 3:
-        print(intento_3)
+        print(intentos_restantes_3)
     elif intento == 4:
-        print(intento_4)
+        print(intentos_restantes_4)
     elif intento == 5:
-        print(intento_5)
-    elif intento == 6:
-        print(intento_6)
+        print(intentos_restantes_5)
+
+    
+    
+
+
 
 '''
 if __name__ == "__main__":
